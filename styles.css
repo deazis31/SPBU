@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 15px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Styling untuk header tabel */
+h4.pertalite-header {
+  background-color: #28a745; /* Hijau untuk Pertalite */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+h4.pertamax-header {
+  background-color: #007bff; /* Biru untuk Pertamax */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+h4.solar-header {
+  background-color: #fd7e14; /* Oranye untuk Solar */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+h4.dexlite-header {
+  background-color: #ffc107; /* Kuning untuk Dexlite */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Layout untuk hari */
+.days-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.day-container {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+/* Layout untuk dua shift dalam satu hari */
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.set-container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 48%;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .set-container {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.table-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.table-wrapper {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .table-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .table-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .input-pengurang input,
+  .input-perkalian input {
+    width: 100%;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+td.nilai {
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+td.nilai:hover {
+  background-color: #e0e0e0;
+}
+
+td.nilai:focus {
+  outline: 2px solid #007bff;
+  background-color: #fff;
+}
+
+.input-pengurang,
+.input-perkalian {
+  margin: 10px 0;
+}
+
+.input-pengurang label,
+.input-perkalian label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-pengurang input,
+.input-perkalian input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 150px;
+}
+
+h2 {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.summary-container {
+  margin-top: 30px;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.summary-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.summary-container th,
+.summary-container td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.summary-container th {
+  background-color: #4caf50;
+  color: white;
+}
+
+.summary-container input {
+  width: 100px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.summary-container td[colspan] {
+  text-align: center;
+  background-color: #f0f0f0;
+}
